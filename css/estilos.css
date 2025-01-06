@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----HEADER----*/
+
+header{
+    background-color: #053146;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.itemMenu {
+    padding: 30px;
+    color:  #F6F4EB;
+}
+
+/*---MAIN----*/
+.titulo1{
+    font-size: 100px;
+    font-family: 'Prompt', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+
+
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+/*----PRODUCTOS----*/
+.contenedorCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+
+.product {
+    height: 250px;
+    padding: 250px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    margin: 10px;
+    box-shadow: 10px 13px 5px -4px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 10px 13px 5px -4px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 10px 13px 5px -4px rgba(0,0,0,0.23);
+}
+
+.product img {
+    width: 55%;
+    height: auto;    
+}
+.product h3 {
+    margin-top: 0;
+}
+
+/*----CARRITO----*/
+.cart {
+    border: 2px solid #053146;;
+}
+
+.cart h2{
+    text-align: center;
+    background-color:  #91C8E4;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 5px;
+}
+
+.cart div{
+    text-align: center;
+}
+
+.cart button{
+    padding: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: white;
+    /* border-radius: 10px; */
+    color: grey;
+    border: 2px solid grey;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover{
+    background-color: grey;
+    color: white;
+    
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(168, 168, 168);
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+/*--FOOTER--*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #053146;
+    padding: 20px;
+}
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+   .gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   } 
+
+   .gg-youtube {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 10px;
+    box-shadow: 0 0 0 2px;
+    border-radius:
+        15px 15px 15px 15px /
+        45px 45px 45px 45px
+}
+.gg-youtube::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    border-left: 4px solid currentColor;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent
+}
+
+.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+.gg-facebook::after,
+.gg-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+}
+.gg-facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+}
+.gg-facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+}
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+}
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+}
+.gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+}
+
+.gg-twitter {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+.gg-twitter::after,
+.gg-twitter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 4px
+}
+.gg-twitter::before {
+    width: 9px;
+    height: 14px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 6px;
+    background:
+        linear-gradient(
+            to left,currentColor 12px,transparent 0)
+            no-repeat center 2px/10px 4px;
+    top: 4px
+}
+.gg-twitter::after {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 20px;
+    top: 2px;
+    box-shadow: 7px 4px 0,7px 12px 0
+}
+
+p {
+    margin-left: 10%;
+    font-size: 30px;
+    font-family: sans-serif;
+    transition: all 0.3s;
+}
+
+p:hover {
+    transform: scale(1.05);
+}
+
+#btnPagar {
+    transition: all 0.3s;
+}
+
+#btnPagar:hover {
+    transform: scale(1.05);
+}
+
+i {
+    color: white;
+    height: 60%;
+    width: 60%
+}
+
+.subtitulo{
+ 
+    font-size: 28px;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Signika', sans-serif;
+    right: 500px ;
+}
+
+.youtube-icon {
+    font-size: 90px; /* Puedes ajustar el tamaño según tus necesidades */
+    color: rgb(255, 255, 255)(255, 255, 255); /* Puedes cambiar el color si lo deseas */
+}
